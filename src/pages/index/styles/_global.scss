@@ -1,0 +1,56 @@
+%flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+%ul-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+%padding {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+%title {
+  margin: 0;
+  font-family: TTNorms, arial, serif;
+  font-size: 48px;
+
+  @media screen and (max-width: 1440px) {
+    font-size: 36px;
+  }
+}
+
+%item-title {
+  margin: 0;
+  padding-top: 34px;
+  font-family: TTNorms, arial, serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 500;
+
+  @media screen and (max-width: 1440px) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+%item-description {
+  font-family: TTNorms, arial, serif;
+  font-size: 18px;
+  font-weight: 400;
+
+  @media screen and (max-width: 1440px) {
+    font-size: 14px;
+  }
+}
+
+

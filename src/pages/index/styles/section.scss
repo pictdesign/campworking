@@ -1,0 +1,102 @@
+.section {
+  @extend %padding;
+  width: 100%;
+  max-width: 1920px;
+  box-sizing: border-box;
+  padding-top: 92px;
+  padding-bottom: 100px;
+
+  @media screen and (max-width: 1440px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &_gray {
+    background-color: #e6e6e6;
+  }
+
+  &_short {
+    max-height: 100vh;
+
+    @media screen and (max-width: 1440px) {
+      max-height: 70vh;
+    }
+
+    @media screen and (max-width: 1279px) {
+      max-height: none;
+    }
+  }
+
+  &_partners {
+    max-height: 20vh;
+    padding-top: 90px;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "title list list";
+
+    @media screen and (max-width: 1289px) {
+      max-height: none;
+      display: flex;
+      flex-direction: column;
+      row-gap: 36px;
+      padding-top: 55px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__title {
+    @extend %title;
+  }
+
+  &__icon {
+    width: 12px;
+    height: 25px;
+  }
+
+  &__list {
+    @extend %ul-list;
+    padding-top: 82px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 42px;
+
+    @media screen and (max-width: 1440px) {
+      padding-top: 42px;
+    }
+
+    @media screen and (max-width: 1279px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_grid {
+      @media screen and (max-width: 1279px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+
+
+  &__logo-list {
+    grid-area: list;
+    @extend %ul-list;
+    @extend %flex-row;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    max-width: 150px;
+    filter: grayscale(1);
+    opacity: 0.2;
+    transition: all 0.7s ease-out;
+    cursor: pointer;
+
+    &:hover {
+      filter: grayscale(0);
+      opacity: 1;
+    }
+  }
+}

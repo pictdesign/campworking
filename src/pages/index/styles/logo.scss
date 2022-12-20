@@ -1,0 +1,13 @@
+.logo {
+  display: block;
+  width: 15vw;
+
+  &_footer {
+    width: 15vw;
+  }
+
+  @media screen and (max-width: 1023px) {
+    width: 295px;
+  }
+  
+}
