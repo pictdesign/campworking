@@ -2,10 +2,12 @@
   "name": "campworking",
   "version": "1.0.0",
   "description": "Campworking website",
+  "homepage": "https://pictdesign.github.io/campworking/",
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve",
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "gh-pages -d build"
   },
   "author": "Stanislav Vokhmyanin",
   "license": "ISC",

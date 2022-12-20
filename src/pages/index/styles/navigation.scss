@@ -8,15 +8,16 @@
     height: 85vh;
     background-color: #fff;
     width: 60%;
-    padding: 50px;
-    transition: all .3s linear;
-    
+    box-sizing: border-box;
+    padding: 40px 50px;
+    transition: all 0.3s linear;
+
     &_active {
-      right: 0;
+      right: -10px;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      row-gap: 100px;
+      row-gap: 10%;
     }
   }
 
@@ -67,18 +68,21 @@
       font-size: 14px;
     }
 
-    @media screen and (max-width: 1023px){
+    @media screen and (max-width: 1023px) {
       font-size: 20px;
     }
   }
 
   &__contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    row-gap: 15px;
+    display: none;
     font-family: TTNorms, Arial, Helvetica, sans-serif;
 
+    @media screen and (max-width: 1023px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      row-gap: 15px;
+    }
 
     a {
       font-size: 18px;
@@ -86,6 +90,4 @@
       color: #000;
     }
   }
-  
-
 }
