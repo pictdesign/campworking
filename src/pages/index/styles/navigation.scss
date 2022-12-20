@@ -23,6 +23,10 @@
     }
   }
 
+  @media screen and (max-width: 767px) {
+    top: 10vh;
+  }
+
   &__list {
     width: 100%;
     list-style-type: none;
