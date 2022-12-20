@@ -1,6 +1,5 @@
 .banner {
   max-height: 100vh;
-  min-height: 620px;
   padding-top: 0;
   padding-bottom: 8%;
   padding-right: 0;
@@ -17,8 +16,16 @@
     padding: 0 0 50px 0;
   }
 
-  @media  screen and (max-width: 1023px){
-    padding-top: 10vh;
+  @media  screen and (max-width: 1023px) {
+    &_main {
+      padding-top: 15vh;
+    }
+  }
+
+  @media  screen and (max-width: 767px) {
+    &_main {
+      padding-top: 10vh;
+    }
   }
 
   &__info {
@@ -91,6 +98,11 @@
 
     @media screen and (max-width: 1279px) {
       text-align: center;
+    }
+
+    @media  screen and (max-width: 767px) {
+      max-width: 80%;
+      font-size: 30px;
     }
   }
 

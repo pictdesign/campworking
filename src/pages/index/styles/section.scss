@@ -68,14 +68,14 @@
     }
 
     @media screen and (max-width: 1279px) {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
 
-    &_grid {
-      @media screen and (max-width: 1279px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    &_flex {
+      @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
       }
     }
   }

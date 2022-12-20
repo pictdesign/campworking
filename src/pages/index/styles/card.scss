@@ -14,10 +14,20 @@
 
     @media screen and (max-width: 1279px) {
       grid-area: 1/1/1/3;
-      
     }
   }
 
+  &_side {
+    @media screen and (max-width: 767px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: 
+      "image title"
+      "image info";
+      gap: 10px;
+    }
+  }
+  
   &_narrow {
     max-width: 330px;
   }
@@ -29,6 +39,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  &__block {
+    grid-area: image;
   }
 
   &__block-inner {
@@ -47,6 +61,10 @@
     width: 100%;
     box-sizing: border-box;
 
+    @media screen and (max-width: 767px) {
+      align-self: flex-end  ;
+    }
+
     &_narrow {
       width: 130px;
     }
@@ -56,13 +74,23 @@
       font-size: 48px;
       line-height: 48px;
       max-width: 500px;
+
+      @media screen and (max-width: 767px) {
+        font-size: 21px;
+        line-height: 18px;
+      }
     }
   }
 
   &__info {
     @extend %flex-row;
+    grid-area: info;
     align-items: center;
     gap: $gap;
+
+    @media screen and (max-width: 767px) {
+      align-self: flex-start;
+    }
   }
 
   &__description {

@@ -13,12 +13,4 @@ const menuToggle = () => {
 
 overlay.addEventListener('click', menuToggle);
 
-const headerFixed = () => {
-  if (scrollY > 500) {
-    header.classList.add('header_fixed');
-  }
-  console.log(scrollY);
-}
-
 burgerButton.addEventListener('click', menuToggle);
-document.addEventListener('scroll', headerFixed);
