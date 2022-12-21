@@ -1,33 +1,21 @@
 .subscribe {
-  @extend %padding;
-  padding-top: 3%;
-  padding-bottom: 5%;
-  box-sizing: border-box;
+  position: relative;
   width: 100%;
-  background-image: url("../../../assets/images/subscribe.jpg");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: calc(66.6% - 42px);
-
-  @media screen and (max-width: 1289px) {
-    background-size: cover;
-    padding-top: 5%;
-  }
+  max-width: 1366px;
+  @extend %padding;
+  padding-top: 72px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
 
   &__wrapper {
     margin: 0 auto;
     background-color: #f2f2f2;
     width: 40%;
-    padding: 5% 10%;
-
-    @media screen and (max-width: 1440px) {
-      padding: 3% 8%;
-    }
+    padding: 30px 120px;
 
     @media screen and (max-width: 1289px) {
       width: 80%;
       box-sizing: border-box;
-      padding: 5% 10%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -37,6 +25,14 @@
       width: 90%;
       padding: 5% 10%;
     }
+  }
+
+  &__image {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 80px;
+    max-width: 890px;
   }
 
   &__title {
@@ -102,7 +98,7 @@
   }
 
   &__input {
-    width: 80%;
+    width: 100%;
     padding: 15px 0 12px 60px;
     box-sizing: border-box;
     border: none;

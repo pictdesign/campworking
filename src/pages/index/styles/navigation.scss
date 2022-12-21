@@ -1,6 +1,7 @@
 .navigation {
-  width: 77%;
-
+  width: 100%;
+  max-width: 780px;
+  
   @media screen and (max-width: 1023px) {
     position: fixed;
     visibility: hidden;
@@ -30,6 +31,7 @@
 
   &__list {
     width: 100%;
+    max-width: 800px;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -44,7 +46,12 @@
       box-sizing: border-box;
       justify-content: flex-start;
     }
+
+    &_footer {
+      max-width: none;
+    }
   }
+  
 
   &__link {
     display: inline-block;
@@ -52,7 +59,7 @@
     font-family: TTNorms;
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 14px;
     transition: all 0.3s linear;
 
     &:hover {
@@ -67,17 +74,6 @@
       }
     }
 
-    @media screen and (max-width: 1366px) {
-      font-size: 16px;
-    }
-
-    @media screen and (max-width: 1024px) {
-      font-size: 14px;
-    }
-
-    @media screen and (max-width: 1023px) {
-      font-size: 20px;
-    }
   }
 
   &__contacts {

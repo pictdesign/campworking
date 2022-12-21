@@ -1,6 +1,10 @@
 .logo {
   display: block;
-  width: 15vw;
+
+  img {
+    width: 15vw;
+    max-width: 290px;
+  }
 
   &_footer {
     width: 15vw;
@@ -9,5 +13,4 @@
   @media screen and (max-width: 1023px) {
     width: 50%;
   }
-  
 }

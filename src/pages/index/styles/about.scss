@@ -2,32 +2,28 @@
   display: grid;
   column-gap: 30px;
   row-gap: 30px;
-  grid-template-columns: 250px 250px 1fr 1fr;
+  grid-template-columns: 200px 170px 1fr 1fr;
   grid-template-areas:
     "title line description description"
     "empty empty subtitle subtitle"
-    "item1 empty1 item2 item3";
-
-  @media screen and (max-width: 1440px) {
-    grid-template-columns: 200px 200px 1fr 1fr;
-  }
+    "item1 item1 item2 item3";
 
   @media screen and (max-width: 1279px) {
     display: flex;
     flex-direction: column;
   }
 
+
+  .item1 {
+    grid-area: item1;
+  }
+
   &__line {
     grid-area: line;
-    width: 240px;
+    width: 170px;
     height: 0.5px;
-    margin-top: 30px;
+    margin-top: 20px;
     background-color: #000;
-
-    @media screen and (max-width: 1440px) {
-      width: 200px;
-      margin-top: 20px;
-    }
 
     @media screen and (max-width: 1279px) {
       display: none;
@@ -38,14 +34,9 @@
     grid-area: description;
     margin: 0;
     align-self: baseline;
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 24px;
+    line-height: 34px;
     color: #808080;
-
-    @media screen and (max-width: 1440px) {
-      font-size: 24px;
-      line-height: 34px;
-    }
 
     @media screen and (max-width: 1279px) {
       padding-top: 38px;
@@ -58,21 +49,15 @@
 
   &__mission {
     margin: 0;
-    padding-top: 180px;
+    padding-top: 140px;
     padding-bottom: 30px;
     grid-area: subtitle;
     font-family: TTNorms, arial, serif;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 42px;
     font-weight: 700;
 
-    @media screen and (max-width: 1440px) {
-      font-size: 24px;
-      padding-top: 140px;
-    }
-
     @media screen and (max-width: 1279px) {
-      
       padding-top: 72px;
       align-self: center;
     }

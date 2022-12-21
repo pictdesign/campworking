@@ -15,18 +15,14 @@
 }
 
 %padding {
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-right: 80px;
+  padding-left: 80px;
 }
 
 %title {
   margin: 0;
   font-family: TTNorms, arial, serif;
-  font-size: 48px;
-
-  @media screen and (max-width: 1440px) {
-    font-size: 36px;
-  }
+  font-size: 36px;
 
   @media screen and (max-width: 767px) {
     font-size: 30px;
@@ -37,14 +33,9 @@
   margin: 0;
   padding-top: 34px;
   font-family: TTNorms, arial, serif;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 30px;
   font-weight: 500;
-
-  @media screen and (max-width: 1440px) {
-    font-size: 24px;
-    line-height: 30px;
-  }
 
   @media screen and (max-width: 767px) {
     font-size: 16px;
@@ -54,12 +45,9 @@
 
 %item-description {
   font-family: TTNorms, arial, serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
 
-  @media screen and (max-width: 1440px) {
-    font-size: 14px;
-  }
 }
 
 
