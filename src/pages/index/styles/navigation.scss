@@ -21,6 +21,7 @@
       flex-direction: column;
       align-items: flex-end;
       row-gap: 10%;
+      justify-content: space-between;
     }
   }
 
@@ -51,7 +52,6 @@
       max-width: none;
     }
   }
-  
 
   &__link {
     display: inline-block;
@@ -59,7 +59,7 @@
     font-family: TTNorms;
     text-decoration: none;
     color: black;
-    font-size: 14px;
+    font-size: 20px;
     transition: all 0.3s linear;
 
     &:hover {
@@ -91,7 +91,7 @@
       text-align: right;
       font-size: 18px;
       text-decoration: none;
-      color: #000;
+      color: rgba(0, 0, 0, .5);
     }
   }
 }
