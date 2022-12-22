@@ -8,14 +8,43 @@
     "empty empty subtitle subtitle"
     "item1 item1 item2 item3";
 
-  @media screen and (max-width: 1279px) {
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "title nth nth"
+    "description description description"
+    "subtitle subtitle subtitle"
+    "item1 item2 item3";
+  }
+
+  @media screen and (max-width: 1023px){
     display: flex;
     flex-direction: column;
   }
 
+  .item {
+    align-self: flex-start;
+
+    @media screen and (max-width: 1023px){
+      align-self: center;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 280px;
+    }
+  }
 
   .item1 {
     grid-area: item1;
+  }
+
+  .item2 {
+    grid-area: item2;
+  }
+
+  .item3 {
+    grid-area: item3;
   }
 
   &__line {
@@ -41,10 +70,20 @@
     @media screen and (max-width: 1279px) {
       padding-top: 38px;
     }
+
+    @media screen and (max-width: 767px) {
+      padding-top: 0px;
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 
   &__empty {
     grid-area: empty;
+
+    @media screen and (max-width: 767px){
+      display: none;
+    }
   }
 
   &__mission {
@@ -58,8 +97,15 @@
     font-weight: 700;
 
     @media screen and (max-width: 1279px) {
+      text-align: center;
       padding-top: 72px;
       align-self: center;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      font-size: 16px;
     }
   }
 }

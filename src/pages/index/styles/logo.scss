@@ -2,7 +2,7 @@
   display: block;
 
   img {
-    width: 15vw;
+    width: 90%;
     max-width: 290px;
   }
 
@@ -11,6 +11,6 @@
   }
 
   @media screen and (max-width: 1023px) {
-    width: 50%;
+    width: 100%;
   }
 }
