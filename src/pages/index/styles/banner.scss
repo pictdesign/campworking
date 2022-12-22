@@ -54,11 +54,18 @@
     align-self: flex-start;
     justify-self: flex-end;
     width: 100%;
+    height: 60vh;
+    min-height: 525px;
+  }
+
+  &__image-inner {
+    height: 100%;
   }
 
   &__image {
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
   }
 
   &__line {
