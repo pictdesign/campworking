@@ -1,12 +1,23 @@
 .logo {
   display: block;
 
-  img {
+  &__image {
+    background-image: url("../../../assets/images/logo.svg");
     width: 90%;
     max-width: 290px;
+    min-width: 150px;
+    max-height: 100px;
+    min-height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
 
-    @media screen and (max-width: 767px){
-      max-width: 220px;
+    &_footer {
+      @media screen and (max-width: 767px) {
+        max-width: 220px;
+        min-width: 42px;
+        min-height: 73px;
+        background-image: url("../../../assets/images/logo_small.svg");
+      }
     }
   }
 

@@ -57,6 +57,10 @@
   &__icon {
     width: 12px;
     height: 25px;
+
+    @media  screen and (max-width: 767px){
+      height: 16px;
+    }
   }
 
   &__list {
@@ -82,11 +86,6 @@
       }
     }
 
-    &_grid {
-      @media screen and (max-width: 767px) {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
   }
 
   &__logo-list {

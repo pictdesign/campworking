@@ -2,8 +2,9 @@
   z-index: 2;
   width: 100%;
   max-width: 1366px;
+  @extend %padding;
+  padding-top: 54px;
   box-sizing: border-box;
-  padding: 54px 80px 0 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -11,14 +12,13 @@
   transition: all .3s linear;
 
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
-    column-gap: 50px;
-    padding: 30px 40px 0 40px;
+    column-gap: 40px;
   }
 
   @media screen and (max-width: 1023px) {
     height: 15vh;
     background-color: white;
-    padding: 30px 40px;
+    padding: 30px 60px;
     position: fixed;
   }
 
