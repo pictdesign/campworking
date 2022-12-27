@@ -3,13 +3,15 @@
 
   &__image {
     background-image: url("../../../assets/images/logo.svg");
-    width: 90%;
-    max-width: 290px;
-    min-width: 150px;
-    max-height: 100px;
-    min-height: 30px;
+    width: 300px;
+    height: 57px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+
+    @media screen and (max-width: 1024px) {
+      width: 200px;
+      height: 38px;
+    }
 
     &_footer {
       @media screen and (max-width: 767px) {
@@ -17,15 +19,12 @@
         min-width: 42px;
         min-height: 73px;
         background-image: url("../../../assets/images/logo_small.svg");
+        background-size: contain;
       }
     }
   }
 
   &_footer {
     width: 15vw;
-  }
-
-  @media screen and (max-width: 1023px) {
-    width: 100%;
   }
 }
